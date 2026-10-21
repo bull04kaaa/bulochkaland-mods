@@ -921,8 +921,8 @@
     },
     {
       "id": "universalenchants",
-      "filename": "universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
-"url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
+      "filename": "universalenchants-v26.2.1-mc26.2.x-fabric.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/universalenchants-v26.2.1-mc26.2.x-fabric.jar",
       "sha256": ""
     },
     {
@@ -989,6 +989,20 @@
       "id": "yet",
       "filename": "yet_another_config_lib_v3-3.9.7-26.2-fabric.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/yet_another_config_lib_v3-3.9.7-26.2-fabric.jar",
+      "sha256": ""
+    }
+  ],
+  "resourcepacks": [
+    {
+      "filename": "resourcepacks.zip",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/resourcepacks.zip",
+      "sha256": ""
+    }
+  ],
+  "configs": [
+    {
+      "filename": "config.zip",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/config.zip",
       "sha256": ""
     }
   ]
