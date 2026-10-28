@@ -794,6 +794,12 @@
       "sha256": ""
     },
     {
+      "id": "spatial",
+      "filename": "spatial.gui.fabric.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/spatial.gui.fabric.jar",
+      "sha256": ""
+    },
+    {
       "id": "shogi",
       "filename": "shogi-fabric-26.2-26.2.0.8.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/shogi-fabric-26.2-26.2.0.8.jar",
