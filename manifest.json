@@ -422,12 +422,6 @@
       "sha256": ""
     },
     {
-      "id": "hudcompass",
-      "filename": "hudcompass-26.2-fabric-1.0.0.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/hudcompass-26.2-fabric-1.0.0.jar",
-      "sha256": ""
-    },
-    {
       "id": "iceberg",
       "filename": "Iceberg-26.2-fabric-1.4.2.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/Iceberg-26.2-fabric-1.4.2.2.jar",
@@ -913,12 +907,12 @@
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/ultimate_minecarts-26.2-fabric.jar",
       "sha256": ""
     },
-{
-  "id": "universalenchants",
-  "filename": "universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
-  "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
-  "sha256": ""
-},
+    {
+      "id": "universalenchants",
+      "filename": "universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
+      "sha256": ""
+    },
     {
       "id": "vehicleupgrade",
       "filename": "VehicleUpgrade-v26.2.0-mc26.2.x-Fabric.jar",
