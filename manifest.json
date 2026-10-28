@@ -344,6 +344,12 @@
       "sha256": "3b161eb534c13de1c4f10bb41d491c6422de1a7a19e11b06da56aa328ddd5809"
     },
     {
+      "id": "watermedia",
+      "filename": "watermedia-3.0.0.22.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/watermedia-3.0.0.22.jar",
+      "sha256": "1a47ac1cd335faeee6ac6459f9a92d892aff4dc67e9b9efa0ba95284aeb3141a"
+    },
+    {
       "id": "farmersdelight",
       "filename": "FarmersDelight-26.2-3.6.26-refabricated.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/FarmersDelight-26.2-3.6.26-refabricated.jar",
@@ -491,12 +497,6 @@
       "id": "jewelry",
       "filename": "jewelry-fabric-2.4.126.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/jewelry-fabric-2.4.126.2.jar",
-      "sha256": ""
-    },
-    {
-      "id": "jewelry",
-      "filename": "jewelry-fabric-2.5.126.3.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/jewelry-fabric-2.5.126.3.jar",
       "sha256": ""
     },
     {
