@@ -338,6 +338,12 @@
       "sha256": ""
     },
     {
+      "id": "watermedia",
+      "filename": "watermedia_binaries-3_0_0_6.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/watermedia_binaries-3_0_0_6.jar",
+      "sha256": "3b161eb534c13de1c4f10bb41d491c6422de1a7a19e11b06da56aa328ddd5809"
+    },
+    {
       "id": "farmersdelight",
       "filename": "FarmersDelight-26.2-3.6.26-refabricated.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/FarmersDelight-26.2-3.6.26-refabricated.jar",
