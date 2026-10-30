@@ -158,6 +158,12 @@
       "sha256": ""
     },
     {
+      "id": "cinematic_interactions",
+      "filename": "Cinematic.Interaction-Fabric-26.2-0.18.30.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/Cinematic.Interaction-Fabric-26.2-0.18.30.jar",
+      "sha256": ""
+    },
+    {
       "id": "cinematic",
       "filename": "cinematic_respawn-26.2-fabric-1.4.1.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/cinematic_respawn-26.2-fabric-1.4.1.jar",
@@ -785,12 +791,6 @@
       "id": "sfcr",
       "filename": "sfcr-2.9.526.2-neobric.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/sfcr-2.9.526.2-neobric.jar",
-      "sha256": ""
-    },
-    {
-      "id": "spatial",
-      "filename": "spatial.gui.fabric.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/spatial.gui.fabric.jar",
       "sha256": ""
     },
     {
