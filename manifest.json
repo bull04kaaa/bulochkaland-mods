@@ -884,6 +884,12 @@
       "sha256": ""
     },
     {
+      "id": "travelersbackpack",
+      "filename": "travelersbackpack-fabric-26.1.2-11.2.0.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/travelersbackpack-fabric-26.1.2-11.2.0.jar",
+      "sha256": ""
+    },
+    {
       "id": "trinkets",
       "filename": "trinkets-4.1.026.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/trinkets-4.1.026.2.jar",
