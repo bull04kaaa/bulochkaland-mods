@@ -1,8 +1,9 @@
 name: Update manifest.json
 
 on:
+  workflow_dispatch:  # запуск вручную кнопкой на GitHub
   release:
-    types: [edited]
+    types: [published, edited, released]
 
 jobs:
   update-manifest:
