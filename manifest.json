@@ -356,6 +356,18 @@
       "sha256": ""
     },
     {
+      "id": "distanthorizons",
+      "filename": "DistantHorizons-3.3.3-26.2-fabric-neoforge.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/DistantHorizons-3.3.3-26.2-fabric-neoforge.jar",
+      "sha256": ""
+    },
+    {
+      "id": "lambdynamiclights",
+      "filename": "lambdynamiclights-4.12.4+26.2.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/lambdynamiclights-4.12.4+26.2.jar",
+      "sha256": ""
+    },
+    {
       "id": "bobby",
       "filename": "bobby-5.2.15-mc26.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/bobby-5.2.15-mc26.2.jar",
