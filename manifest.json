@@ -908,18 +908,6 @@
       "sha256": ""
     },
     {
-      "id": "ultimate_key_lock",
-      "filename": "ultimate_key_lock-26.2.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/ultimate_key_lock-26.2.jar",
-      "sha256": ""
-    },
-    {
-      "id": "ultimate_minecarts",
-      "filename": "ultimate_minecarts-26.2-fabric.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/ultimate_minecarts-26.2-fabric.jar",
-      "sha256": ""
-    },
-    {
       "id": "universalenchants",
       "filename": "universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/universalenchants-v26.2.1-mc26.2.x-fabric-.jar",
