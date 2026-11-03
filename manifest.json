@@ -668,12 +668,6 @@
       "sha256": ""
     },
     {
-      "id": "more_darkness",
-      "filename": "more_darkness-fabric-26.2-2.0.0-26.2.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/more_darkness-fabric-26.2-2.0.0-26.2.jar",
-      "sha256": ""
-    },
-    {
       "id": "moreculling",
       "filename": "moreculling-fabric-26.2-1.8.1.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/moreculling-fabric-26.2-1.8.1.jar",
@@ -896,6 +890,12 @@
       "sha256": ""
     },
     {
+      "id": "skin",
+      "filename": "skin-weathering-1.2.1-26.2.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/skin-weathering-1.2.1-26.2.jar",
+      "sha256": ""
+    },
+    {
       "id": "skinlayers3d",
       "filename": "skinlayers3d-fabric-1.11.4-mc26.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/skinlayers3d-fabric-1.11.4-mc26.2.jar",
@@ -995,6 +995,12 @@
       "id": "trinkets",
       "filename": "trinkets-4.1.026.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/trinkets-4.1.026.2.jar",
+      "sha256": ""
+    },
+    {
+      "id": "true",
+      "filename": "true-darkness-2.0.0.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/true-darkness-2.0.0.jar",
       "sha256": ""
     },
     {
