@@ -657,6 +657,12 @@
     },
     {
       "id": "more",
+      "filename": "more-darkness.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/more-darkness.jar",
+      "sha256": ""
+    },
+    {
+      "id": "more",
       "filename": "more-professions-1.5.3.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/more-professions-1.5.3.jar",
       "sha256": ""
@@ -995,12 +1001,6 @@
       "id": "trinkets",
       "filename": "trinkets-4.1.026.2.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/trinkets-4.1.026.2.jar",
-      "sha256": ""
-    },
-    {
-      "id": "true",
-      "filename": "true-darkness-2.0.0.jar",
-      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/true-darkness-2.0.0.jar",
       "sha256": ""
     },
     {
