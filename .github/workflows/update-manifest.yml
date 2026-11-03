@@ -1,60 +1,78 @@
+
 name: Update manifest.json
 
 on:
-  workflow_dispatch:  # запуск вручную кнопкой на GitHub
+  workflow_dispatch:
   release:
     types: [published, edited, released]
+
+# Не допускаем одновременное выполнение обновлений
+concurrency:
+  group: update-manifest
+  cancel-in-progress: false
 
 jobs:
   update-manifest:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
+      # 1. Получаем основную ветку репозитория
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
+      # 2. Генерируем manifest.json из релиза v1
       - name: Generate manifest.json from release assets
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
         run: |
           python3 << 'EOF'
-          import json, subprocess, os
+          import json, subprocess, os, sys
 
           repo = os.environ["REPO"]
-          token = os.environ["GH_TOKEN"]
 
-          # Получаем все assets из релиза v1
+          # Получаем assets релиза v1
           result = subprocess.run(
-              ["gh", "api", f"repos/{repo}/releases/tags/v1", "--jq", ".assets[]"],
-              capture_output=True, text=True
+              [
+                  "gh", "api",
+                  f"repos/{repo}/releases/tags/v1",
+                  "--jq",
+                  "[.assets[] | {name: .name, url: .browser_download_url}]"
+              ],
+              capture_output=True,
+              text=True
           )
 
-          # Читаем текущий manifest чтобы сохранить resourcepacks и configs
+          if result.returncode != 0:
+              print("Ошибка получения релиза:")
+              print(result.stderr)
+              sys.exit(1)
+
+          assets = json.loads(result.stdout)
+
+          # Читаем текущий manifest
           with open("manifest.json", "r", encoding="utf-8") as f:
               current = json.load(f)
 
-          # Получаем полный список assets
-          result = subprocess.run(
-              ["gh", "api", f"repos/{repo}/releases/tags/v1", "--jq",
-               "[.assets[] | {name: .name, url: .browser_download_url}]"],
-              capture_output=True, text=True
-          )
-          assets = json.loads(result.stdout)
-
-          # Фильтруем только .jar файлы, исключая -sources.jar
+          # Формируем список модов
           mods = []
+
           for asset in assets:
               name = asset["name"]
+
               if not name.endswith(".jar"):
                   continue
+
               if name.endswith("-sources.jar"):
                   continue
 
-              # id — имя файла без версии и расширения (первая часть до первой цифры)
-              base = name.replace(".jar", "")
+              base = name[:-4]
               parts = base.split("-")
               mod_id = parts[0].lower()
 
@@ -65,10 +83,10 @@ jobs:
                   "sha256": ""
               })
 
-          # Сортируем по filename
+          # Сортировка модов
           mods.sort(key=lambda x: x["filename"].lower())
 
-          # Собираем новый manifest
+          # Создание нового manifest
           new_manifest = {
               "mc_version": current.get("mc_version", "1.20.4"),
               "mods": mods,
@@ -77,16 +95,32 @@ jobs:
           }
 
           with open("manifest.json", "w", encoding="utf-8") as f:
-              json.dump(new_manifest, f, ensure_ascii=False, indent=2)
+              json.dump(
+                  new_manifest,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
               f.write("\n")
 
-          print(f"✓ manifest.json обновлён: {len(mods)} модов")
+          print(f"Manifest обновлён: {len(mods)} модов")
           EOF
 
+      # 3. Сохраняем и отправляем изменения
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add manifest.json
-          git diff --cached --quiet && echo "Нет изменений" || \
-            git commit -m "Auto-update manifest.json [skip ci]" && git push
+
+          if git diff --cached --quiet; then
+            echo "Нет изменений"
+            exit 0
+          fi
+
+          git commit -m "Auto-update manifest.json [skip ci]"
+
+          git pull --rebase origin main
+
+          git push origin HEAD:main
