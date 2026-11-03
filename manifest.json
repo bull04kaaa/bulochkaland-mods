@@ -296,6 +296,12 @@
       "sha256": ""
     },
     {
+      "id": "emf_compat_core_fabric",
+      "filename": "emf_compat_core_fabric.jar",
+      "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/emf_compat_core_fabric.jar",
+      "sha256": ""
+    },
+    {
       "id": "emotecraft",
       "filename": "emotecraft-for-MC26.2-3.4.0-b.build.166.jar",
       "url": "https://github.com/bull04kaaa/bulochkaland-mods/releases/download/v1/emotecraft-for-MC26.2-3.4.0-b.build.166.jar",
