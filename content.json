@@ -6,6 +6,11 @@
       "tag": "🔮 Вайп",
       "title": "Всё с чистого листа — мир обнулён",
       "text": "Мир магии окутал БулочкаLand! Переходим на новый уровень бытия — всё с чистого листа. Добро пожаловать в новую эру."
+    },
+    {
+      "tag": "📢 Новость",
+      "title": "ыыыыыыыы",
+      "text": ""
     }
   ],
   "rules": {
@@ -135,5 +140,71 @@
         ]
       }
     ]
-  }
+  },
+  "visualMods": [
+    {
+      "file": "iris-fabric-1.11.4-mc26.2.jar",
+      "minPreset": "high"
+    },
+    {
+      "file": "DistantHorizons-3.3.3-26.2-fabric-neoforge.jar",
+      "minPreset": "high"
+    },
+    {
+      "file": "lambdynamiclights-4.12.4+26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "continuity-3.0.1-26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "entity_model_features-3.3.8-26.2-fabric.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "entity_texture_features-7.2.4-26.2-fabric.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "skinlayers3d-fabric-1.11.4-mc26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "notenoughanimations-fabric-1.12.7.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "CameraOverhaul-v2.1.2-fabric-mc-26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "particleeffects-1.6.026.2fabric.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "blur-fabric-6.3.1-26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "sound-physics-remastered-fabric-1.5.1-26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "AmbientSounds_FABRIC_v6.3.6_mc26.2.jar",
+      "minPreset": "medium"
+    },
+    {
+      "file": "firstperson-fabric-2.7.3-mc26.2.jar",
+      "minPreset": "low"
+    },
+    {
+      "file": "sodium-fabric-0.9.2-mc26.2.jar",
+      "minPreset": "low"
+    },
+    {
+      "file": "dynamic-fps-3.11.9-minecraft-26.2.0-fabric.jar",
+      "minPreset": "low"
+    }
+  ]
 }
